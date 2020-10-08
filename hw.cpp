@@ -23,9 +23,9 @@ int main()
         wlen = strlen(word);
         if (wlen > 10)
         {
-/*             cout << word << endl;
+            cout << word << endl;
             cout << wlen << endl;
- */            outstr = word[0] + to_string(wlen - 2) + word[wlen - 1];
+            outstr = word[0] + to_string(wlen - 2) + word[wlen - 1];
             strcpy(word, outstr.c_str());
             cout << word << endl;
             // fprintf(fout, "%s%s", word, "\n");
@@ -36,5 +36,4 @@ int main()
             // fprintf(fout, "%s%s", word, "\n");
         }
     }
-    cin.ignore();
 }
